@@ -9,7 +9,13 @@
     <script src="main.js"></script>
 </head>
 <body>
-    <h1>滿結晶時間計算</h1>
+    <nav>
+        <a href="#time">滿結晶時間</a>
+        <a href="#fight">打帖戰力</a>
+        <a href="#room">靈泉房數量</a>
+    </nav>
+    <section>
+    <h1 id="time">滿結晶時間計算</h1>
     <form>
         <label id="level">現在等級：</label>
         <select id="lel" name="usercard">
@@ -65,5 +71,27 @@
         <input type="button" name="submit" value="送出" class="button" onclick="processFormData();" />
         <button type="reset" class="button">清除</button>
     </form>
+    </section>
+    <section>
+        <h1 id="fight">打帖戰力計算</h1>
+        <form>
+            <label>戰力：</label>
+            <input type="text" id="power"><br><br>
+            <input type="button" name="submit" value="送出" class="button" onclick="processFormData2();" />
+            <button type="reset" class="button">清除</button>
+        </form>
+    </section>
+    <section>
+        <h1 id="room">靈泉房數量計算</h1>
+        <form>
+            <label>報名房間數：</label>
+            <input type="text" id="roomnum"><br><br>
+            <input type="button" name="submit" value="送出" class="button" onclick="processFormData3();" />
+            <button type="reset" class="button">清除</button>
+        </form>
+    </section>
+    <footer>
+        <h5>Copyrgiht @ 2024 Lin-Meng All rights reserved</h5>
+    </footer>
 </body>
 </html>
