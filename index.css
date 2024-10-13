@@ -1,0 +1,38 @@
+body {
+    background-color: #feecef;
+    margin: 0px;
+    padding: 0px;
+}
+h1 {
+    color: #444444;
+    margin: 5px 20px 10px 20px;
+    text-align: center;
+}
+form {
+    text-align: center;
+}
+label{
+    color: #9d6381;
+    font-size: large;
+    font-weight: bold;
+}
+input{
+    color: #9d6381;
+    font-size: large;
+    font-weight: bold;
+}
+select{
+    color: #9d6381;
+    font-size: large;
+    font-weight: bold;
+}
+.button {
+    margin: 5px 20px 10px 20px;
+    padding: 10px 20px;
+    background-color: #cda8b8;
+    color: #444444;
+    font-size: 20px;
+    border: #444444 3px solid;
+    font-weight: bolder;
+    border-radius: 5px;
+}
