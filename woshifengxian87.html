@@ -14,6 +14,7 @@
         <a href="#time">滿結晶時間</a>
         <a href="#fight">打帖戰力</a>
         <a href="#room">靈泉房數量</a>
+        <a href="#full">滿結晶下等位置</a>
     </nav>
     <section>
     <h1 id="time">滿結晶時間計算</h1>
@@ -88,6 +89,31 @@
             <label>報名房間數：</label>
             <input type="text" id="roomnum"><br><br>
             <input type="button" name="submit" value="送出" class="button" onclick="processFormData3();" />
+            <button type="reset" class="button">清除</button>
+        </form>
+    </section>
+    <section>
+        <h1 id="full">滿結晶後下一等位置計算</h1>
+        <form>
+            <label id="level2">現在等級：</label>
+        <select id="lel2" name="usercard">
+            <option value="24150">3後</option>
+            <option value="44625">4後</option>
+            <option value="54915">5後</option>
+            <option value="61950">6後</option>
+            <option value="72135">7後</option>
+            <option value="166950">8後</option>
+            <option value="193220">9後</option>
+            <option value="223650">10後</option>
+            <option value="315000">11後</option>
+            <option value="903000">12後</option>
+            <option value="950985">13後</option>
+            <option value="1003275">14後</option>
+            <option value="1058422">15後</option>
+          </select><br><br>
+          <label>現在經驗：</label>
+            <input type="text" id="tex2"><br><br>
+            <input type="button" name="submit" value="送出" class="button" onclick="processFormData4();" />
             <button type="reset" class="button">清除</button>
         </form>
     </section>
