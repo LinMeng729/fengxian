@@ -23,14 +23,60 @@ function processFormData2() {
 function processFormData3() {
     var roomnum = parseInt(document.getElementById('roomnum').value)
     for(var i=1;i<=5;i++){
+    // if(i=1,roomnum%2!=0){
+    //     roomnum=(roomnum+1)/2;
+    //     a='1';
+    // }
+    // if(i=1,roomnum%2==0){
+    //     roomnum=roomnum/2;
+    //     a='a';
+    // }
+    // if(i=2,roomnum%2!=0){
+    //     roomnum=(roomnum+1)/2;
+    //     b='2';
+    // }
+    // if(i=2,roomnum%2==0){
+    //     roomnum=roomnum/2;
+    //     b='b';
+    // }
+    // if(i=3,roomnum%2!=0){
+    //     roomnum=(roomnum+1)/2;
+    //     c='3';
+    // }
+    // if(i=3,roomnum%2==0){
+    //     roomnum=roomnum/2;
+    //     c='c';
+    // }
+    // if(i=4,roomnum%2!=0){
+    //     roomnum=(roomnum+1)/2;
+    //     d='4';
+    // }
+    // if(i=4,roomnum%2==0){
+    //     roomnum=roomnum/2;
+    //     d='d';
+    // }
+    // if(i=5,roomnum%2!=0){
+    //     roomnum=(roomnum+1)/2;
+    //     e='5';
+    // }
+    // if(i=5,roomnum%2==0){
+    //     roomnum=roomnum/2;
+    //     e='e';
+    // }
     if(roomnum%2!=0){
         roomnum=(roomnum+1)/2;
     }
     else{
         roomnum=roomnum/2;
+        // a='';
+        // b='';
+        // c='';
+        // d='';
+        // e='';
     }
     }
     alert('共有 ' + roomnum + ' 間靈泉房' );
+    // alert('共有 ' + roomnum + ' 間靈泉房\n第 '+a+b+c+d+e+' 輪有機會輪空' );
 }
 function processFormData4() {
     // var lel = document.getElementById('lel');
@@ -271,5 +317,62 @@ function processFormData4() {
                 break;
             }
         }
+    }
+}
+function processFormData5() {
+    var lel3 = parseInt(document.getElementById('lel3').value)
+    if(lel3==1){
+        alert('Lv.1 凡人\n功法：戰力+150\n百寶袋：戰力+180\n保底：5  (2,500金幣)\n挑戰帖：20修為');
+    }
+    if(lel3==2){
+        alert('Lv.2 練氣\n功法：戰力+400\n百寶袋：戰力+430\n保底：10  (5,000金幣)\n挑戰帖：100修為');
+    }
+    if(lel3==3){
+        alert('Lv.3 築基\n功法：戰力+7000\n百寶袋：戰力+7000\n保底：20  (10,000金幣)\n挑戰帖：800修為');
+    }
+    if(lel3==4){
+        alert('Lv.4 結丹\n功法：修練速度+5%\n百寶袋：戰力+20,000\n保底：40  (20,000金幣)\n挑戰帖：1000修為');
+    }
+    if(lel3==5){
+        alert('Lv.5 元嬰\n功法：修練速度+5%\n百寶袋：戰力+60,000\n保底：60  (30,000金幣)\n挑戰帖：1,500修為');
+    }
+    if(lel3==6){
+        alert('Lv.6 出竅\n功法：火系戰力+3%\n百寶袋：戰力+80,000\n保底：80  (40,000金幣)\n挑戰帖：2,000修為');
+    }
+    if(lel3==7){
+        alert('Lv.7 化神\n功法：水系戰力+3%\n百寶袋：戰力+100,000\n保底：100  (50,000金幣)\n挑戰帖：3,000修為');
+    }
+    if(lel3==8){
+        alert('Lv.8 合體\n功法：木系戰力+3%\n百寶袋：戰力+140,000\n保底：120  (60,000金幣)\n挑戰帖：4,000修為');
+    }
+    if(lel3==9){
+        alert('Lv.9 洞虛\n功法：戰力+100,000\n百寶袋：戰力+200,000\n保底：150  (75,000金幣)\n挑戰帖：5,000修為');
+    }
+    if(lel3==10){
+        alert('Lv.10 大承\n功法：戰力+1%\n百寶袋：戰力+400,000\n保底：180  (90,000金幣)\n挑戰帖：6,000修為');
+    }
+    if(lel3==11){
+        alert('Lv.11 渡劫\n功法：修練速度+15%\n百寶袋：戰力+1%\n保底：210  (105,000金幣)\n挑戰帖：8,000修為');
+    }
+    if(lel3==12){
+        alert('Lv.12 人仙\n功法：修練速度+30%\n百寶袋：戰力+1,000,000\n保底：250  (125,000金幣)\n挑戰帖：20,000修為');
+    }
+    if(lel3==13){
+        alert('Lv.13 真仙\n功法：木系戰力+5%\n百寶袋：戰力+1,300,000\n保底：290  (145,000金幣)\n挑戰帖：25,000修為');
+    }
+    if(lel3==14){
+        alert('Lv.14 金仙\n功法：火系戰力+5%\n百寶袋：戰力+1,700,000\n保底：330  (165,000金幣)\n挑戰帖：28,000修為');
+    }
+    if(lel3==15){
+        alert('Lv.15 上仙\n功法：水系戰力+5%\n百寶袋：戰力+5%\n保底：370  (185,000金幣)\n挑戰帖：30,000修為');
+    }
+    if(lel3==16){
+        alert('Lv.16 仙君\n功法：戰力+3,000,000\n百寶袋：戰力+3,000,000\n保底：410  (205,000金幣)\n挑戰帖：45,000修為');
+    }
+    if(lel3==17){
+        alert('Lv.17 仙尊\n功法：戰力+15%\n百寶袋：戰力+3,500,000\n保底：450  (225,000金幣)\n挑戰帖：60,000修為');
+    }
+    if(lel3==18){
+        alert('Lv.18 仙帝\n功法：修練速度+70%\n百寶袋：戰力+15%\n保底：500  (250,000金幣)\n挑戰帖：100,000修為');
     }
 }

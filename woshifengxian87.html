@@ -10,11 +10,13 @@
     <link rel="shortcut icon" href="001.ico">
 </head>
 <body>
-    <nav>
+    <nav id="top">
         <a href="#time">滿結晶時間</a>
         <a href="#fight">打帖戰力</a>
         <a href="#room">靈泉房數量</a>
         <a href="#full">滿結晶下等位置</a>
+        <a href="#luck">奇遇</a>
+        <a href="#treasure">各等級資訊</a>
     </nav>
     <section>
     <h1 id="time">滿結晶時間計算</h1>
@@ -117,6 +119,185 @@
             <button type="reset" class="button">清除</button>
         </form>
     </section>
+    <section>
+        <h1 id="luck">奇遇</h1>
+        <table align="center">
+            <thead>
+                <tr>
+                  <th scope="col">情境</th>
+                  <td scope="col">選項1</td>
+                  <td scope="col">結果1</td>
+                  <td scope="col">選項2</td>
+                  <td scope="col">結果2</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                  <th scope="row">途經靈山，你發現兩隻靈獸在爭搶靈果</th>
+                  <td>幫助鸞鳥</td>
+                  <td style="background-color: #D0F4DE;">聚靈丹</td>
+                  <td>幫助金鼠</td>
+                  <td style="background-color: #FCF6BD;">元氣丹</td>
+                </tr>
+                <tr>
+                    <th scope="row">有位書生前來拜訪,祈求你能幫幫他的病重母親</th>
+                    <td>贈藥</td>
+                    <td style="background-color: #D0F4DE;">聚靈丹</td>
+                    <td>救治</td>
+                    <td style="background-color: #FCF6BD;">元氣丹</td>
+                </tr>
+                <tr>
+                    <th scope="row">深夜，一名修仙者鬼鬼祟祟潛入你的洞府，試圖偷取你的物品</th>
+                    <td>與其戰鬥</td>
+                    <td style="background-color: #D0F4DE;">聚靈丹</td>
+                    <td>好言相勸</td>
+                    <td style="background-color: #FF99C8;">扣修為</td>
+                </tr>
+                <tr>
+                    <th scope="row">身逢亂世，你下山救民，路邊一位傷重乞丐向你求助</th>
+                    <td>救治</td>
+                    <td style="background-color: #D0F4DE;">聚靈丹</td>
+                    <td>離去</td>
+                    <td style="background-color: #FF99C8;">扣修為</td>
+                </tr>
+                <tr>
+                    <th scope="row">你無意中聽說東海有一仙島，於是前往探索</th>
+                    <td>乘船前往</td>
+                    <td style="background-color: #D0F4DE;">聚靈丹</td>
+                    <td>御劍前往</td>
+                    <td style="background-color: #E4C1F9;">挑戰帖</td>
+                </tr>
+                <tr>
+                    <th scope="row">道友贈送你一張藏寶圖，圖中指示了兩個藏寶地點</th>
+                    <td>黑水湖</td>
+                    <td style="background-color: #FF99C8;">扣修為</td>
+                    <td>花蓮村</td>
+                    <td style="background-color: #D0F4DE;">聚靈丹</td>
+                </tr>
+                <tr>
+                    <th scope="row">你受邀前往道友的洞府拜訪,你看道友在忙,於是幫他</th>
+                    <td>澆灌藥園</td>
+                    <td style="background-color: #FEC8C3;">加修為</td>
+                    <td>煉丹</td>
+                    <td style="background-color: #D0F4DE;">聚靈丹</td>
+                </tr>
+                <tr>
+                    <th scope="row">你偶然遇到了一位雲遊四海的商人，於是準備向他購買</th>
+                    <td>仙草</td>
+                    <td style="background-color: #FEC8C3;">加修為</td>
+                    <td>丹藥</td>
+                    <td style="background-color: #D0F4DE;">聚靈丹</td>
+                </tr>
+                <tr>
+                    <th scope="row">近日夜裡隱現寶光，聽說是有寶物即將問世。但因封印影響，夜晚之時，四周陷入嚴寒絕地，難以接近</th>
+                    <td>夜晚前往</td>
+                    <td style="background-color: #FCF6BD;">元氣丹</td>
+                    <td>白天前往</td>
+                    <td>無</td>
+                </tr>
+                <tr>
+                    <th scope="row">同道友出遊，經過一片荒蕪之地，發現此地有一洞穴，透出金光</th>
+                    <td>一同探索</td>
+                    <td style="background-color: #FF99C8;">扣修為</td>
+                    <td>分開探索</td>
+                    <td style="background-color: #FCF6BD;">元氣丹</td>
+                </tr>
+                <tr>
+                    <th scope="row">你不小心闖入了一片迷魂林</th>
+                    <td>向左走</td>
+                    <td style="background-color: #FF99C8;">扣修為</td>
+                    <td>向右走</td>
+                    <td style="background-color: #E4C1F9;">挑戰帖</td>
+                </tr>
+                <tr>
+                    <th scope="row">近日有一邪教人士出沒，鬼鬼祟祟，不知有什麼目的</th>
+                    <td>暗中調查</td>
+                    <td style="background-color: #E4C1F9;">挑戰帖</td>
+                    <td>正面出擊</td>
+                    <td>無</td>
+                </tr>
+                <tr>
+                    <th scope="row">你聽說北方有處奇景，欲前往觀之，卻誤入了修仙大能的遺跡，此時看守靈獸現身</th>
+                    <td>與其戰鬥</td>
+                    <td style="background-color: #E4C1F9;">挑戰帖</td>
+                    <td>表達敬仰</td>
+                    <td style="background-color: #FEC8C3;">加修為</td>
+                </tr>
+                <tr>
+                    <th scope="row">你遇到一位神秘的仙人,他向你提出一個問題:你在修仙路途上,堅持的初衷是什麼?你回答道</th>
+                    <td>善良</td>
+                    <td style="background-color: #FEC8C3;">加修為</td>
+                    <td>強大</td>
+                    <td style="background-color: #E4C1F9;">挑戰帖</td>
+                </tr>
+                <tr>
+                    <th scope="row">天空突然出現了一道巨大的裂縫，釋放出強大的能量波動</th>
+                    <td>勇敢靠近</td>
+                    <td style="background-color: #FEC8C3;">加修為</td>
+                    <td>迅速躲避</td>
+                    <td>無</td>
+                </tr>
+                <tr>
+                    <th scope="row">一位修仙高手聽聞你天資聰穎，於是專程前來找你切磋</th>
+                    <td>上前切磋</td>
+                    <td style="background-color: #FD9187;">加修為（較多）</td>
+                    <td>謙虛回絕</td>
+                    <td style="background-color: #FEC8C3;">加修為</td>
+                </tr>
+                <tr>
+                    <th scope="row">你在遊歷人界之時，偶然發現一靈氣濃郁的礦脈</th>
+                    <td>淺處挖掘</td>
+                    <td style="background-color: #FEC8C3;">加修為</td>
+                    <td>深處挖掘</td>
+                    <td>無</td>
+                </tr>
+                <tr>
+                    <th scope="row">偶遇路邊流氓在欺壓一位白髮者，你上前制止後，老者拿出兩塊靈石，請你選擇一塊作為謝禮</th>
+                    <td>普通的靈石</td>
+                    <td style="background-color: #FEC8C3;">加修為</td>
+                    <td>古怪的靈石</td>
+                    <td style="background-color: #FD9187;">加修為（較多）</td>
+                </tr>
+                <tr>
+                    <th scope="row">你偶然發現一片靈氣濃郁的樹林,於是進入歇息</th>
+                    <td>食用果實</td>
+                    <td style="background-color: #FD9187;">加修為（較多）</td>
+                    <td>飲用溪水</td>
+                    <td style="background-color: #FEC8C3;">加修為</td>
+                </tr>
+            </tbody>
+        </table>
+    </section><section>
+        <h1 id="treasure">各等級資訊</h1>
+        <form>
+            <label id="level3">等級：</label>
+        <select id="lel3" name="usercard">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+          </select><br><br>
+            <input type="button" name="submit" value="送出" class="button" onclick="processFormData5();" />
+            <button type="reset" class="button">清除</button>
+        </form>
+    </section>
+    <a href="#top">
+        <img src="02.jpg" id="topbutton">
+    </a>
     <footer>
         <h5>Copyrgiht @ 2024 FengXian All rights reserved</h5>
     </footer>

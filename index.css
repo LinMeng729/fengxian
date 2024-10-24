@@ -19,6 +19,9 @@ nav a:hover {
     background-color: #cda8b8;
     color: white;
 }
+section {
+    margin-top: 20px;
+}
 h1 {
     color: #444444;
     margin: 5px 20px 10px 20px;
@@ -52,9 +55,80 @@ select{
     font-weight: bolder;
     border-radius: 5px;
 }
+table {
+    text-align: center;
+    border-collapse: collapse;
+    border: 2px solid #444444;
+    color: #9d6381;
+    width: 60%;
+}
+thead {
+    background-color: #cda8b8;
+    color: #444444;
+}
+th,td {
+  border: 1px solid #444444;
+}
+td {
+    color: #444444;
+}
+.row {
+    color: #9d6381;
+}
+@media screen and (max-width:1880px) {
+    table {
+        width: 60%;
+    }
+    th {
+        width: 50%;
+    }
+    td {
+        width: 12.5%;
+    }
+    #topbutton {
+        width: 10%;
+    }
+}
+@media screen and (max-width:1240px) {
+    table {
+        width: 85%;
+    }
+    th {
+        width: 50%;
+    }
+    td {
+        width: 12.5%;
+    }
+    #topbutton {
+        width: 15%;
+    }
+}
+@media screen and (max-width:800px) {
+th {
+    width: 40%;
+}
+td {
+    width: 15%;
+}
+table {
+    width: 90%;
+}
+#topbutton {
+    width: 20%;
+}
+}
+#topbutton {
+    /* width: 10%; */
+    height: auto;
+    border-radius: 5%;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
 footer {
     background-color: #cda8b8;
     color: #444444;
     text-align: center;
     padding: 10px;
+    margin-top: 20px;
 }
