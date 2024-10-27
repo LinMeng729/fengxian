@@ -121,7 +121,134 @@
     </section>
     <section>
         <h1 id="luck">奇遇</h1>
-        <table align="center">
+        <table align="center" id="view">
+            <thead>
+                <tr>
+                  <td scope="col">選項1</td>
+                  <td scope="col">結果1</td>
+                  <td scope="col">選項2</td>
+                  <td scope="col">結果2</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                  <td>幫助鸞鳥</td>
+                  <td style="background-color: #D0F4DE;">聚靈丹</td>
+                  <td>幫助金鼠</td>
+                  <td style="background-color: #FCF6BD;">元氣丹</td>
+                </tr>
+                <tr>
+                    <td>贈藥</td>
+                    <td style="background-color: #D0F4DE;">聚靈丹</td>
+                    <td>救治</td>
+                    <td style="background-color: #FCF6BD;">元氣丹</td>
+                </tr>
+                <tr>
+                    <td>與其戰鬥</td>
+                    <td style="background-color: #D0F4DE;">聚靈丹</td>
+                    <td>好言相勸</td>
+                    <td style="background-color: #FF99C8;">扣修為</td>
+                </tr>
+                <tr>
+                    <td>救治</td>
+                    <td style="background-color: #D0F4DE;">聚靈丹</td>
+                    <td>離去</td>
+                    <td style="background-color: #FF99C8;">扣修為</td>
+                </tr>
+                <tr>
+                    <td>乘船前往</td>
+                    <td style="background-color: #D0F4DE;">聚靈丹</td>
+                    <td>御劍前往</td>
+                    <td style="background-color: #E4C1F9;">挑戰帖</td>
+                </tr>
+                <tr>
+
+                    <td>黑水湖</td>
+                    <td style="background-color: #FF99C8;">扣修為</td>
+                    <td>花蓮村</td>
+                    <td style="background-color: #D0F4DE;">聚靈丹</td>
+                </tr>
+                <tr>
+                    <td>澆灌藥園</td>
+                    <td style="background-color: #FEC8C3;">加修為</td>
+                    <td>煉丹</td>
+                    <td style="background-color: #D0F4DE;">聚靈丹</td>
+                </tr>
+                <tr>
+                    <td>仙草</td>
+                    <td style="background-color: #FEC8C3;">加修為</td>
+                    <td>丹藥</td>
+                    <td style="background-color: #D0F4DE;">聚靈丹</td>
+                </tr>
+                <tr>
+                    <td>夜晚前往</td>
+                    <td style="background-color: #FCF6BD;">元氣丹</td>
+                    <td>白天前往</td>
+                    <td>無</td>
+                </tr>
+                <tr>
+                    <td>一同探索</td>
+                    <td style="background-color: #FF99C8;">扣修為</td>
+                    <td>分開探索</td>
+                    <td style="background-color: #FCF6BD;">元氣丹</td>
+                </tr>
+                <tr>
+                    <td>向左走</td>
+                    <td style="background-color: #FF99C8;">扣修為</td>
+                    <td>向右走</td>
+                    <td style="background-color: #E4C1F9;">挑戰帖</td>
+                </tr>
+                <tr>
+                    <td>暗中調查</td>
+                    <td style="background-color: #E4C1F9;">挑戰帖</td>
+                    <td>正面出擊</td>
+                    <td>無</td>
+                </tr>
+                <tr>
+                    <td>與其戰鬥</td>
+                    <td style="background-color: #E4C1F9;">挑戰帖</td>
+                    <td>表達敬仰</td>
+                    <td style="background-color: #FEC8C3;">加修為</td>
+                </tr>
+                <tr>
+                    <td>善良</td>
+                    <td style="background-color: #FEC8C3;">加修為</td>
+                    <td>強大</td>
+                    <td style="background-color: #E4C1F9;">挑戰帖</td>
+                </tr>
+                <tr>
+                    <td>勇敢靠近</td>
+                    <td style="background-color: #FEC8C3;">加修為</td>
+                    <td>迅速躲避</td>
+                    <td>無</td>
+                </tr>
+                <tr>
+                    <td>上前切磋</td>
+                    <td style="background-color: #FD9187;">加修為（較多）</td>
+                    <td>謙虛回絕</td>
+                    <td style="background-color: #FEC8C3;">加修為</td>
+                </tr>
+                <tr>
+                    <td>淺處挖掘</td>
+                    <td style="background-color: #FEC8C3;">加修為</td>
+                    <td>深處挖掘</td>
+                    <td>無</td>
+                </tr>
+                <tr>
+                    <td>普通的靈石</td>
+                    <td style="background-color: #FEC8C3;">加修為</td>
+                    <td>古怪的靈石</td>
+                    <td style="background-color: #FD9187;">加修為（較多）</td>
+                </tr>
+                <tr>
+                    <td>食用果實</td>
+                    <td style="background-color: #FD9187;">加修為（較多）</td>
+                    <td>飲用溪水</td>
+                    <td style="background-color: #FEC8C3;">加修為</td>
+                </tr>
+            </tbody>
+        </table>
+        <table align="center" id="hid" style="display: none;">
             <thead>
                 <tr>
                   <th scope="col">情境</th>
@@ -267,7 +394,10 @@
                 </tr>
             </tbody>
         </table>
-    </section><section>
+        <input type="button" name="submit" value="顯示" class="button" onclick="processFormData6();" />
+        <input type="button" name="submit" value="隱藏" class="button" onclick="processFormData7();" />
+    </section>
+    <section>
         <h1 id="treasure">各等級資訊</h1>
         <form>
             <label id="level3">等級：</label>

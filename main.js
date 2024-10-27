@@ -276,6 +276,14 @@ function processFormData4() {
         }
     }
 }
+function processFormData6() {
+    document.getElementById("hid").style.display = '';
+    document.getElementById("view").style.display = 'none';
+}
+function processFormData7() {
+    document.getElementById("hid").style.display = 'none';
+    document.getElementById("view").style.display = '';
+}
 function processFormData5() {
     var lel3 = parseInt(document.getElementById('lel3').value)
     if(lel3==1){
