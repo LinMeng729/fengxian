@@ -22,61 +22,18 @@ function processFormData2() {
 }
 function processFormData3() {
     var roomnum = parseInt(document.getElementById('roomnum').value)
+    x=[];
     for(var i=1;i<=5;i++){
-    // if(i=1,roomnum%2!=0){
-    //     roomnum=(roomnum+1)/2;
-    //     a='1';
-    // }
-    // if(i=1,roomnum%2==0){
-    //     roomnum=roomnum/2;
-    //     a='a';
-    // }
-    // if(i=2,roomnum%2!=0){
-    //     roomnum=(roomnum+1)/2;
-    //     b='2';
-    // }
-    // if(i=2,roomnum%2==0){
-    //     roomnum=roomnum/2;
-    //     b='b';
-    // }
-    // if(i=3,roomnum%2!=0){
-    //     roomnum=(roomnum+1)/2;
-    //     c='3';
-    // }
-    // if(i=3,roomnum%2==0){
-    //     roomnum=roomnum/2;
-    //     c='c';
-    // }
-    // if(i=4,roomnum%2!=0){
-    //     roomnum=(roomnum+1)/2;
-    //     d='4';
-    // }
-    // if(i=4,roomnum%2==0){
-    //     roomnum=roomnum/2;
-    //     d='d';
-    // }
-    // if(i=5,roomnum%2!=0){
-    //     roomnum=(roomnum+1)/2;
-    //     e='5';
-    // }
-    // if(i=5,roomnum%2==0){
-    //     roomnum=roomnum/2;
-    //     e='e';
-    // }
     if(roomnum%2!=0){
         roomnum=(roomnum+1)/2;
+        x.push(i);
     }
     else{
         roomnum=roomnum/2;
-        // a='';
-        // b='';
-        // c='';
-        // d='';
-        // e='';
     }
     }
-    alert('共有 ' + roomnum + ' 間靈泉房' );
-    // alert('共有 ' + roomnum + ' 間靈泉房\n第 '+a+b+c+d+e+' 輪有機會輪空' );
+    // alert('共有 ' + roomnum + ' 間靈泉房' );
+    alert('共有 ' + roomnum + ' 間靈泉房\n第 '+x+' 輪有機會輪空' );
 }
 function processFormData4() {
     // var lel = document.getElementById('lel');
