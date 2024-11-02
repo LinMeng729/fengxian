@@ -345,12 +345,12 @@ function processFormData8() {
     var a=Math.floor(Math.random() * 9);
     // alert(a);
     if(a<=3){
-        alert(a+'木');
+        alert('木');
     }
     if(3<a & a<=6){
-        alert(a+'火');
+        alert('火');
     }
     if(6<a & a<=9){
-        alert(a+'水');
+        alert('水');
     }
 }
