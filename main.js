@@ -354,3 +354,67 @@ function processFormData8() {
         alert('水');
     }
 }
+function processFormData9() {
+    var a=Math.floor(Math.random() * 9);
+    var b=Math.floor(Math.random() * 9);
+    var c=Math.floor(Math.random() * 9);
+    var d=Math.floor(Math.random() * 9);
+    var e=Math.floor(Math.random() * 9);
+    var f=Math.floor(Math.random() * 9);
+    // alert(a);
+    if(a<=3){     //a
+        a='木';
+    }
+    if(3<a & a<=6){
+        a='火';
+    }
+    if(6<a & a<=9){
+        a='水';
+    }
+    if(b<=3){    //b
+        b='木';
+    }
+    if(3<b & b<=6){
+        b='火';
+    }
+    if(6<b & b<=9){
+        b='水';
+    }
+    if(c<=3){    //c
+        c='木';
+    }
+    if(3<c & c<=6){
+        c='火';
+    }
+    if(6<c & c<=9){
+        c='水';
+    }
+    if(d<=3){     //d
+        d='木';
+    }
+    if(3<d & d<=6){
+        d='火';
+    }
+    if(6<d & d<=9){
+        d='水';
+    }
+    if(e<=3){     //e
+        e='木';
+    }
+    if(3<e & e<=6){
+        e='火';
+    }
+    if(6<e & e<=9){
+        e='水';
+    }
+    if(f<=3){     //f
+        f='木';
+    }
+    if(3<f & f<=6){
+        f='火';
+    }
+    if(6<f & f<=9){
+        f='水';
+    }
+    alert('第一輪：'+a+b+c+'\n第二輪：'+d+e+f);
+}
