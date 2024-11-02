@@ -341,3 +341,16 @@ function processFormData5() {
         alert('Lv.18 仙帝\n功法：修練速度+70%\n百寶袋：戰力+15%\n保底：500  (250,000金幣)\n挑戰帖：100,000修為');
     }
 }
+function processFormData8() {
+    var a=Math.floor(Math.random() * 9);
+    // alert(a);
+    if(a<=3){
+        alert(a+'木');
+    }
+    if(3<a & a<=6){
+        alert(a+'火');
+    }
+    if(6<a & a<=9){
+        alert(a+'水');
+    }
+}
